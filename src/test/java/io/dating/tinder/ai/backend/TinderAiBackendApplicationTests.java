@@ -1,4 +1,4 @@
-package io.dating.tinder_ai_backend;
+package io.dating.tinder.ai.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
