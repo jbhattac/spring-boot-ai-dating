@@ -10,5 +10,6 @@ public record Profile(String id,
                       Gender gender,
                       String bio,
                       String imageUrl,
-                      String myBriggsPersonalityType) {
+                      String ethnicity,
+                      String myersBriggsPersonalityType) {
 }
