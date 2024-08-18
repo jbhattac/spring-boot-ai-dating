@@ -2,6 +2,8 @@ plugins {
 	java
 	id("org.springframework.boot") version "3.2.8"
 	id("io.spring.dependency-management") version "1.1.6"
+	id ("io.freefair.lombok") version "6.6.2"
+
 }
 
 group = "io.dating"
@@ -30,6 +32,9 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
+
+
 }
 
 dependencyManagement {

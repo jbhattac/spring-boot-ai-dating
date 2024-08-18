@@ -5,9 +5,9 @@ services:
     hostname: mongodb
     environment:
       - 'MONGO_INITDB_DATABASE=mydatabase'
-      - 'MONGO_INITDB_ROOT_PASSWORD=secret'
+      - 'MONGO_INITDB_ROOT_PASSWORD=root'
       - 'MONGO_INITDB_ROOT_USERNAME=root'
-    volumes:
-      - dbdata6:./data/db
     ports:
       - "27017:27017"
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
